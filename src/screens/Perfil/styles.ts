@@ -38,7 +38,18 @@ export const styles = StyleSheet.create({
     dot:{
         padding: 0, 
         marginRight: -10
-    }
+    },
+    contentImagePerfil:{
+        alignItems: "center"
+    },
+    imagePerfil:{
+        marginTop: -30,
+        width:100,
+        height:100,
+        borderWidth: 2,
+        borderColor: 'white',
+        borderRadius: 50
+    },
 
 
 

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Text , TouchableOpacity, View, Image, TextInput, ImageBackground } from 'react-native';
 import { styles } from './styles';
+
 import Outlander from '../../assets/outlander.jpg';
+import ImgPerfil from '../../assets/perfilimagem.jpg';
+
 import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
@@ -33,8 +36,8 @@ export const Perfil = () =>{
                      <Entypo name="dot-single" size={34} color="white" style={styles.dot}/>
                 </View>
 
-                <View>
-                    
+                <View style={styles.contentImagePerfil}>
+                    <Image style={styles.imagePerfil} source={ImgPerfil}></Image>
                 </View>
             </ImageBackground>
 
