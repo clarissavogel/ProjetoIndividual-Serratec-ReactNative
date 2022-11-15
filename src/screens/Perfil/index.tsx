@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text , TouchableOpacity, View, Image, TextInput, ImageBackground } from 'react-native';
+import { Text , TouchableOpacity, View, Image, TextInput, ImageBackground, ScrollView } from 'react-native';
 import { styles } from './styles';
 
 import Outlander from '../../assets/outlander.jpg';
@@ -9,12 +9,14 @@ import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
+import { SimpleLineIcons } from '@expo/vector-icons';
 
 
 export const Perfil = () =>{
 
     return(
       <View style={styles.container}>
+        <ScrollView>
             <ImageBackground source={Outlander} style={styles.imagem}>
                 <View style={styles.contentInfo}>
                     <TouchableOpacity 
@@ -41,7 +43,18 @@ export const Perfil = () =>{
                 </View>
             </ImageBackground>
 
-
+                <View style={styles.contentName}>
+                    <Text style={styles.name}>Clarissa Vogel</Text>
+                    <TouchableOpacity>
+                        <SimpleLineIcons name="share-alt" size={20} color="gray" />
+                    </TouchableOpacity>
+                </View>
+                <TouchableOpacity
+                activeOpacity={0.7}
+                style={styles.buttonEdit}>
+                    <Text>Editar</Text>
+                </TouchableOpacity>
+        </ScrollView>
       </View>
     )
   }

@@ -51,6 +51,26 @@ export const styles = StyleSheet.create({
         borderRadius: 50
     },
 
+    contentName:{
+        marginTop:60,
+        flexDirection:"row",
+        justifyContent: "center"
+    },
+
+    name:{
+        fontSize: 24,
+        fontWeight:"bold",
+        marginRight: 5
+    },
+    
+    buttonEdit:{
+        marginTop:20,
+        padding:10,
+        backgroundColor: '#EFF0EB',
+        alignItems: "center",
+        width:100,
+    },
+
 
 
 })
