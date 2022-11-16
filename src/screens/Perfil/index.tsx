@@ -17,14 +17,27 @@ import Greys from '../../assets/greysanatomyposter.jpg';
 import Dark from '../../assets/darkposter.jpg';
 import BreakingBad from '../../assets/breakingbadposter.jpg';
 
-import { EvilIcons } from '@expo/vector-icons';
+import Avengers from '../../assets/avengers.jpg';
+import DoctorStrange from '../../assets/doctorstrange2.jpg';
+import DonnieDarko from '../../assets/donniedarko.jpg';
+import Endgame from '../../assets/endgame.jpg';
+import Spider1 from '../../assets/homemaranhadevoltaaolar.jpg';
+import Spider2 from '../../assets/homemaranhalongedecasa.jpg';
+import Spider3 from '../../assets/homemaranhasemvoltapracasa.jpg';
+import IronMan from '../../assets/homemdeferro.jpg';
+import Inception from '../../assets/inception.jpg';
+import Interestelar from '../../assets/interestelar.jpg';
+import QuietPlace from '../../assets/umlugarsilencioso.jpg';
+
 import { AntDesign } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Entypo } from '@expo/vector-icons';
-import { SimpleLineIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+import { SimpleLineIcons } from '@expo/vector-icons';
+
 
 
 export const Perfil = () =>{
@@ -100,18 +113,43 @@ export const Perfil = () =>{
                             <Text style={styles.textNumberTime}>3.7K</Text>
                         </View>
                     </View>
+
+                    <View style={styles.contentTimeWatching}>
+                        <View style={styles.contentTitleTime}>
+                            <Text style={styles.titleTime}>TEMPO VENDO FILMES</Text>
+                        </View>
+                        <View style={styles.contentCountTime}>
+                            <Text style={styles.textNumberTime}>00</Text>
+                            <Text style={styles.textNumberTime}>28</Text>
+                            <Text style={styles.textNumberTime}>00</Text>
+                        </View>
+                        <View style={styles.contentTextTime}>
+                            <Text style={styles.textTime}>Meses</Text>
+                            <Text style={styles.textTime}>Dias</Text>
+                            <Text style={styles.textTime}>Horas</Text>
+                        </View>
+                    </View>
+
+                    <View style={styles.contentTimeWatching}>
+                        <View style={styles.contentTitleTime}>
+                            <Text style={styles.titleTime}>FILMES ASSISTIDOS</Text>
+                        </View>
+                        <View style={styles.contentCountEpisodes}>
+                            <Text style={styles.textNumberTime}>338</Text>
+                        </View>
+                    </View>
                 </ScrollView>
 
                 <View style={styles.contentNewList}>
-                    <Text style={styles.textSeries}>Listas de seriados</Text>
+                    <Text style={styles.textTitle}>Listas de seriados</Text>
                     <TouchableOpacity style={styles.buttonNewList}>
                         <Entypo name="plus" size={50} color="#A9AAA8" />
                         <Text style={{color:"#A9AAA8"}}>CRIAR UMA NOVA LISTA</Text>
                     </TouchableOpacity>
                 </View>
 
-                <View style={styles.contentSeries}>
-                    <Text style={styles.textSeries}>
+                <View style={styles.contentSeriesMovies}>
+                    <Text style={styles.textTitle}>
                         Séries
                     </Text>
                     <TouchableOpacity
@@ -131,8 +169,8 @@ export const Perfil = () =>{
                     <Image style={styles.imageFolder} source={Loki}></Image>  
                 </ScrollView>
 
-                <View style={styles.contentSeries}>
-                    <Text style={{fontSize:22}}>
+                <View style={styles.contentSeriesMovies}>
+                    <Text style={{fontSize:18}}>
                         Séries favoritas
                     </Text>
                     <TouchableOpacity
@@ -154,12 +192,103 @@ export const Perfil = () =>{
                         <Entypo name="plus" size={50} color="#A9AAA8" />
                         <Text style={{color:"#A9AAA8", fontSize:10}}>ADICIONAR A UMA LISTA</Text>
                     </TouchableOpacity>
-
                 </ScrollView>
 
 
+                <View style={styles.divisao}></View>
+{/* FILMES */}
 
+                <View style={styles.contentSeriesMovies}>
+                    <Text style={styles.textTitle}>
+                        Filmes
+                    </Text>
+                    <TouchableOpacity
+                    activeOpacity={0.7}>
+                        <Text style={styles.textSeeMore}>VER MAIS</Text>
+                    </TouchableOpacity>
+                </View>
 
+                <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}>
+                    <Image style={styles.imageFolder} source={QuietPlace}></Image>
+                    <Image style={styles.imageFolder} source={Inception}></Image>
+                    <Image style={styles.imageFolder} source={Interestelar}></Image>
+                    <Image style={styles.imageFolder} source={DoctorStrange}></Image>
+                    <Image style={styles.imageFolder} source={Endgame}></Image>
+                    <Image style={styles.imageFolder} source={Avengers}></Image>
+                </ScrollView>
+
+                <View style={styles.contentSeriesMovies}>
+                    <Text style={{fontSize:18}}>
+                        Filmes favoritos
+                    </Text>
+                    <TouchableOpacity
+                    activeOpacity={0.7}>
+                        <Text style={styles.textSeeMore}>VER MAIS</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}>
+                    <Image style={styles.imageFolder} source={Endgame}></Image>
+                    <Image style={styles.imageFolder} source={Avengers}></Image>
+                    <Image style={styles.imageFolder} source={DonnieDarko}></Image>
+                    <Image style={styles.imageFolder} source={Spider1}></Image>
+                    <Image style={styles.imageFolder} source={Spider2}></Image>
+                    <Image style={styles.imageFolder} source={Spider3}></Image>
+                    <TouchableOpacity style={styles.folder}>
+                        <Entypo name="plus" size={50} color="#A9AAA8" />
+                        <Text style={{color:"#A9AAA8", fontSize:10}}>ADICIONAR A UMA LISTA</Text>
+                    </TouchableOpacity>
+                </ScrollView>
+
+                <View style={styles.divisao}></View>
+
+                <View>
+                    <TouchableOpacity
+                    style={styles.buttonFollowers}
+                    activeOpacity={0.7}>
+                        <Text style={styles.textInfo}>Seguidores</Text>
+                        <View style={styles.contentNumber}>
+                            <Text style={styles.textInfo}>42</Text>
+                            <AntDesign name="right" size={20} color="black" />
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                    style={styles.buttonFollowers}
+                    activeOpacity={0.7}>
+                        <Text style={styles.textInfo}>Seguindo</Text>
+                        <View style={styles.contentNumber}>
+                            <Text style={styles.textInfo}>41</Text>
+                            <AntDesign name="right" size={20} color="black" />
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                    style={styles.buttonFollowers}
+                    activeOpacity={0.7}>
+                        <Text style={styles.textInfo}>Comentários</Text>
+                        <View style={styles.contentNumber}>
+                            <Text style={styles.textInfo}>17</Text>
+                            <AntDesign name="right" size={20} color="black" />
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                    style={styles.buttonFollowers}
+                    activeOpacity={0.7}>
+                        <Text style={styles.textInfo}>Estatísticas</Text>
+                            <AntDesign name="right" size={20} color="black" />
+                    </TouchableOpacity>
+                </View>
+        
+                    <TouchableOpacity style={styles.buttonConfig}>
+                        <MaterialIcons name="settings" size={20} color="black" />
+                        <Text style={{marginTop:2, marginLeft:5}}>CONFIGURAÇÕES</Text>
+                    </TouchableOpacity>
 
         </ScrollView>
         
