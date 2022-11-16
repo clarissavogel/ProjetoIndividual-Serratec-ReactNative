@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { TouchableOpacity, View, TextInput } from "react-native";
 import { styles } from "./styles";
 
 
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
+
 
 export const InputEmail = () =>{
 
@@ -15,6 +16,7 @@ export const InputEmail = () =>{
                 <TextInput 
                     placeholder='E-mail'
                     placeholderTextColor={'gray'}
+                    keyboardType={'email-address'}
                     style={styles.input}
                 />
             </View>
