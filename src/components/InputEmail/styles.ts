@@ -2,7 +2,7 @@ import { StyleSheet, Platform } from "react-native";
 
 export const styles = StyleSheet.create({
     contentInput:{
-        padding: Platform.OS === 'ios' ? 15 : 10,
+        paddingVertical:15,
         marginTop: 15,
         borderWidth: 1,
         borderBottomColor: 'gray',
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     input: {
         backgroundColor:'black',
         color: '#fff',
-        fontSize: 20,
+        fontSize: 18,
 
     },
 
