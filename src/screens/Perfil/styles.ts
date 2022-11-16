@@ -63,13 +63,133 @@ export const styles = StyleSheet.create({
         marginRight: 5
     },
     
+    contentEditProfile:{
+        flexDirection:"row",
+        justifyContent: "center",
+    },
     buttonEdit:{
         marginTop:20,
         padding:10,
+        width:100,
+        height:35,
         backgroundColor: '#EFF0EB',
         alignItems: "center",
-        width:100,
+        borderRadius:50,
     },
+
+    contentTimeWatching:{
+        backgroundColor: 'white',
+        marginLeft: 10,
+        marginTop:20,
+        padding:10,
+        marginBottom: 10,
+        width: 220,
+        height: 90,
+        borderRadius: 10,
+        shadowColor: 'black',
+        shadowOffset: { width: 2, height: 2},
+        shadowRadius:4,
+        shadowOpacity:0.2
+    },
+    contentTitleTime:{
+        flexDirection:"row",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+
+    titleTime:{
+        fontWeight:"500"
+    },
+
+    contentCountTime:{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        marginTop: 2,
+        marginHorizontal: 15
+
+    },
+    contentTextTime:{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        marginTop: 2,
+        marginHorizontal: 12
+    },
+
+    textNumberTime:{
+        fontSize:27, 
+        fontWeight:'bold'
+    },
+
+    textTime:{
+        fontSize:12,
+        fontWeight: "500"
+    },
+
+    contentCountEpisodes:{
+        flexDirection:"row",
+        justifyContent:"center",
+        marginTop: 2
+    },
+
+    contentNewList:{
+        marginTop: 20,
+        marginHorizontal: 10,
+        paddingBottom: 20,
+        borderBottomColor: "#EFF0EB",
+        borderBottomWidth: 1
+    },
+    textSeries:{
+        fontSize: 24,
+        fontWeight:"bold",
+    },
+
+    buttonNewList:{
+        marginTop: 20,
+        backgroundColor:"#EFF0EB",
+        height: 170,
+        borderRadius:10,
+        justifyContent:"center",
+        alignItems:"center"
+
+    },
+
+    contentSeries:{
+        marginTop: 20,
+        marginHorizontal: 10,
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center"
+
+    },
+
+    textSeeMore:{
+        color: "#2575CA",
+        fontWeight: "bold"
+    },
+
+    contentLastWatchedSeries:{
+        backgroundColor: 'blue',
+        marginLeft: 10,
+        marginTop:20,
+        marginBottom: 30,
+        width: 145,
+        height: 210,
+        borderRadius: 10,
+    },
+
+    navbar:{
+        borderTopColor:"#EFF0EB",
+        borderTopWidth:1,
+        height: 90,
+        padding: 10,
+        flexDirection:"row",
+        justifyContent:"space-between",
+
+    },
+
+
+
+
 
 
 
