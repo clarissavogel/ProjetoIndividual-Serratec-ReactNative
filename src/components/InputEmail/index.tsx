@@ -21,7 +21,7 @@ export const InputEmail = () =>{
                 <TouchableOpacity 
                 activeOpacity={0.7} 
                 style={styles.buttonText}>
-                    <AntDesign name="closecircle" size={24} color="#FDD400" />
+                    <AntDesign name="closecircle" size={20} color="#FDD400" />
                 </TouchableOpacity>
         </View>
     )
