@@ -3,15 +3,14 @@ import { TouchableOpacity, Text} from "react-native";
 import { styles } from "./styles";
 
 
-export const ButtonEnter = () =>{
+export const ButtonForgotPassword = () =>{
 
     return(
 
         <TouchableOpacity
         activeOpacity={0.7}
-        style={styles.buttonEnter}
-        >
-            <Text style={styles.buttonText}>ENTRAR</Text>
+        style={styles.buttonForgotPassword}>
+            <Text style={styles.buttonText}>ESQUECI A SENHA</Text>
         </TouchableOpacity>
     )
 

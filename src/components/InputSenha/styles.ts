@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
 
         
     },
-    mail:{
+    password:{
         flexDirection:"row",
 
     },
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
 
     },
 
-    iconmail:{
+    iconpassword:{
         marginRight: 15
     },
 

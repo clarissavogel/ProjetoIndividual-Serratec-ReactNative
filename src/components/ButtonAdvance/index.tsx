@@ -3,7 +3,8 @@ import { TouchableOpacity, Text} from "react-native";
 import { styles } from "./styles";
 
 
-export const ButtonEnter = () =>{
+
+export const ButtonAdvance = () =>{
 
     return(
 
@@ -11,7 +12,7 @@ export const ButtonEnter = () =>{
         activeOpacity={0.7}
         style={styles.buttonEnter}
         >
-            <Text style={styles.buttonText}>ENTRAR</Text>
+            <Text style={styles.buttonText}>AVANÇAR</Text>
         </TouchableOpacity>
     )
 

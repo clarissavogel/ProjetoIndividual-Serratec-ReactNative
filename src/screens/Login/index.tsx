@@ -4,7 +4,7 @@ import { styles } from './styles';
 
 import { ButtonBack } from '../../components/ButtonBack';
 import { InputEmail } from '../../components/InputEmail';
-import { ButtonEnter } from '../../components/ButtonEnter';
+import { ButtonAdvance } from '../../components/ButtonAdvance';
 
 
 
@@ -21,7 +21,7 @@ export const Login = () =>{
 
         <InputEmail/>
 
-        <ButtonEnter/>
+        <ButtonAdvance/>
         
     </View>
   )

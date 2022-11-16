@@ -2,25 +2,26 @@ import React from 'react';
 import { TouchableOpacity, View, TextInput } from "react-native";
 import { styles } from "./styles";
 
+import { EvilIcons } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
-import { AntDesign } from '@expo/vector-icons';
-import { Feather } from '@expo/vector-icons';
 
-export const InputEmail = () =>{
+export const InputSenha = () =>{
 
     return(
         <View style={styles.contentInput}>
-            <View style={styles.mail}>
-                <Feather name="mail" size={24} color="gray" style={styles.iconmail} />
+            <View style={styles.password}>
+                <EvilIcons name="lock" size={32} color="gray" style={styles.iconpassword} />
                 <TextInput 
-                    placeholder='E-mail'
+                    placeholder='Senha'
                     placeholderTextColor={'gray'}
+                    secureTextEntry={true}
                     style={styles.input}
                 />
             </View>
                 <TouchableOpacity 
                 activeOpacity={0.7}>
-                    <AntDesign name="closecircle" size={20} color="#FDD400" />
+                    <Entypo style={{marginRight:10}} name="eye-with-line" size={20} color="#FDD400" />
                 </TouchableOpacity>
         </View>
     )
