@@ -8,13 +8,23 @@ import Brooklyn99 from '../../assets/brooklyn99poster.jpg';
 import Friends from '../../assets/friendsposter.jpg';
 import Handsmaid from '../../assets/thehandsmaidstaleposter.jpg';
 import EmilyInParis from '../../assets/emilyinparisposter.jpg';
+import WandaVision from '../../assets/wandavisionposter.jpg';
+import OutlanderPoster from '../../assets/outlanderposter.jpg';
+import StrangerThings from '../../assets/strangerthingsposter.jpg';
+import PrisionBreak from '../../assets/prisionbreakposter.jpg';
+import Loki from '../../assets/lokiposter.jpg';
+import Greys from '../../assets/greysanatomyposter.jpg';
+import Dark from '../../assets/darkposter.jpg';
+import BreakingBad from '../../assets/breakingbadposter.jpg';
 
 import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 
 export const Perfil = () =>{
@@ -113,19 +123,63 @@ export const Perfil = () =>{
                 <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}>
-                    <Image style={styles.contentLastWatchedSeries} source={Brooklyn99}></Image>
-                    <Image style={styles.contentLastWatchedSeries} source={Friends}></Image>
-                    <Image style={styles.contentLastWatchedSeries} source={Handsmaid}></Image>
-                    <Image style={styles.contentLastWatchedSeries} source={EmilyInParis}></Image>
+                    <Image style={styles.imageFolder} source={Brooklyn99}></Image>
+                    <Image style={styles.imageFolder} source={BreakingBad}></Image>
+                    <Image style={styles.imageFolder} source={Handsmaid}></Image>
+                    <Image style={styles.imageFolder} source={EmilyInParis}></Image>
+                    <Image style={styles.imageFolder} source={PrisionBreak}></Image>
+                    <Image style={styles.imageFolder} source={Loki}></Image>  
                 </ScrollView>
+
+                <View style={styles.contentSeries}>
+                    <Text style={{fontSize:22}}>
+                        Séries favoritas
+                    </Text>
+                    <TouchableOpacity
+                    activeOpacity={0.7}>
+                        <Text style={styles.textSeeMore}>VER MAIS</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}>
+                    <Image style={styles.imageFolder} source={Dark}></Image>
+                    <Image style={styles.imageFolder} source={OutlanderPoster}></Image>
+                    <Image style={styles.imageFolder} source={Greys}></Image>
+                    <Image style={styles.imageFolder} source={Friends}></Image>
+                    <Image style={styles.imageFolder} source={StrangerThings}></Image>
+                    <Image style={styles.imageFolder} source={WandaVision}></Image>
+                    <TouchableOpacity style={styles.folder}>
+                        <Entypo name="plus" size={50} color="#A9AAA8" />
+                        <Text style={{color:"#A9AAA8", fontSize:10}}>ADICIONAR A UMA LISTA</Text>
+                    </TouchableOpacity>
+
+                </ScrollView>
+
+
+
+
 
         </ScrollView>
         
         <View style={styles.navbar}>
-            <View>
-                <Feather name="tv" size={24} color="black" />
-                <Text>Séries</Text>
-            </View>
+            <TouchableOpacity activeOpacity={0.7} style={styles.navbarIcons}>
+                <Feather name="tv" size={36} color="#A4A4A4" />
+                <Text style={styles.navbarText}>Séries</Text>
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7} style={styles.navbarIcons}>
+                <MaterialCommunityIcons name="movie-open-outline" size={36} color="#A4A4A4" />
+                <Text style={styles.navbarText}>Filmes</Text>
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7} style={styles.navbarIcons}>
+                <Entypo name="magnifying-glass" size={36} color="#A4A4A4" />
+                <Text style={styles.navbarText}>Descobrir</Text>
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7} style={styles.navbarIcons}>
+                <FontAwesome5 name="user" size={36} color="black" />
+                <Text style={styles.navbarSelectedText}>Perfil</Text>
+            </TouchableOpacity>
         </View>
 
       </View>

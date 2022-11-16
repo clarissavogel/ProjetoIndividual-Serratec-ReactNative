@@ -167,8 +167,7 @@ export const styles = StyleSheet.create({
         fontWeight: "bold"
     },
 
-    contentLastWatchedSeries:{
-        backgroundColor: 'blue',
+    imageFolder:{
         marginLeft: 10,
         marginTop:20,
         marginBottom: 30,
@@ -177,14 +176,46 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
     },
 
+    folder:{
+        backgroundColor:"#EFF0EB",
+        marginLeft: 10,
+        marginTop:20,
+        marginBottom: 30,
+        width: 145,
+        height: 210,
+        borderRadius: 10,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+
+
+
+
     navbar:{
         borderTopColor:"#EFF0EB",
         borderTopWidth:1,
-        height: 90,
-        padding: 10,
+        height: 100,
+        paddingVertical: 10,
+        paddingHorizontal: 25,
         flexDirection:"row",
         justifyContent:"space-between",
 
+    },
+
+    navbarIcons:{
+        alignItems:"center",
+    },
+
+    navbarText:{
+        marginTop: 5,
+        fontSize: 12,
+        color:"#A4A4A4"
+    },
+
+    
+    navbarSelectedText:{
+        marginTop: 5,
+        fontSize: 12,
     },
 
 
